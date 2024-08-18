@@ -1,1 +1,1 @@
-# live-session-work
+# Fully responsive coffee shop store

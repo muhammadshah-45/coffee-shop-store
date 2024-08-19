@@ -13,3 +13,17 @@
      -smaller-font-size:.813rem;
 
 */
+
+
+@media screen and (max-width: 1023px) {
+  .nav__menu {
+    position: fixed;
+    top: 9%;
+    background: linear-gradient(180deg,hsl(12,32%,22%) 20%,hsl(12,42%,12%) 100%);
+    border-radius: 0 0 50px 50px;
+    width: 100%;
+    box-shadow: 0 -2px 12px hsla(12,32%,22%,.3) ;
+    padding: 1rem 4rem;
+  }
+
+}

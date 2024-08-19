@@ -3,6 +3,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
 /* Pacifico Font */
 
 /* header-height: 3.5rem 
@@ -67,6 +69,7 @@ img{
 }
 .section{
     padding-block:4.5rem 3.5rem;
+    /* border: 3px solid #eee; */
 }
 .section__title{
     color: hsl(12,12%,16%);
@@ -82,7 +85,71 @@ img{
 
 /* Header & Nav */
 
+.header {
+    /* border: 1px  solid red; */
+    position: fixed;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    background-color:hsl(12,32%,22%); 
+    z-index: 100;
+    transition: background .4s, box-shadow .4s;
+}
+/* .header__border{
+    /* border: 1px solid  white; */
+     /* width: 100%;
+     height: 2px;
+     background-image:linear-gradient(90deg,hsl(12,8%,48%) 50%,transparent 50% ) ;
+     background-size: 24px;
+     position: absolute;
+     bottom: 0;
+     left: 0%;
+     transition: opacity 0.3s; */
 
+/* } */ 
+.nav{
+    height:3.5rem ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav__logo{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+    /* border: 1px solid red; */
+    font-size: 1.25rem;
+    font-family: "Titillium Web";
+    font-weight: bold;
+}
+.nav__logo img{
+    /* width: 15%; */
+    width: 28px;
+}
+.nav__list{
+    display: flex;
+    justify-content: space-between;
+}
+.nav__link{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 10px;
+    row-gap: .256rem;
+    transition: color .3s;
+}
+.nav__link i{
+    background: linear-gradient(180deg,hsl(39,62%,75%) 0%,hsl(39,62%,45%) 100%);
+    /* border-radius: 10px; */
+    color: transparent;
+    -webkit-background-clip: text;
+    font-size: 1.45rem;
+}
+.nav__link:hover{
+    color:hsl(39,62%,65%) ;
+}
 /* Navigation for mobile devices */
 
 

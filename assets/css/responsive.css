@@ -13,7 +13,12 @@
      -smaller-font-size:.813rem;
 
 */
-
+@media screen and (max-width: 748px) {
+  .grid{
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 @media screen and (max-width: 1023px) {
   .nav__menu {
@@ -23,7 +28,7 @@
     border-radius: 0 0 50px 50px;
     width: 100%;
     box-shadow: 0 -2px 12px hsla(12,32%,22%,.3) ;
-    padding: 1rem 4rem;
+    padding: 12px 5rem;
   }
   .nav__list{
     gap: 0;

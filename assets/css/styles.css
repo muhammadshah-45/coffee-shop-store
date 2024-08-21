@@ -5,6 +5,17 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 
+/* font face */
+
+@font-face {
+    font-family: matter-light;
+    src: url(/fonts/matter-light.ttf);
+    font-family: Nb;
+    src: url(/fonts/NBInternationalProBoo.ttf);
+    font-family: Rejoice;
+    src: url(/fonts/Rejouice-Headline.ttf);
+}
+
 /* Pacifico Font */
 
 /* header-height: 3.5rem 
@@ -76,11 +87,7 @@ img{
     margin-inline: 1rem;
 
 }
-.grid{
-    display: grid;
-    gap: 1.5rem;
 
-}
 .section{
     padding-block:4.5rem 3.5rem;
     /* border: 3px solid #eee; */
@@ -100,7 +107,7 @@ img{
 /* Header & Nav */
 
 .header {
-    /* border: 1px  solid red; */
+    
     position: fixed;
     top: 0%;
     left: 0;
@@ -144,6 +151,7 @@ img{
 .nav__list{
     display: flex;
     justify-content: space-between;
+    gap: 40px;
 }
 .nav__link{
     color: #fff;
@@ -167,34 +175,70 @@ img{
 
 /*  HOME STYLE */
 .home{
-    margin-top: 20px;
+    margin-top: 30px;
     background: url(../images/banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
-.home__container{
-    padding-top: 2rem;
-    row-gap: 2rem;
-    border: 2px solid  blue;
+.grid{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* gap: 1rem; */
+
+}
+
+.home__container {
+    
     backdrop-filter: blur(4px);
     z-index: -1;
 }
 .home__data{
-    border: 1px solid  skyblue;
+    /* border: 1px solid  skyblue; */
+
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .home__title
 {
+    width: 65%;
     color: #d2c8c6;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     z-index: 88;
     font-weight: 800;
-    font-size: 2rem;
+    font-size: 3.2rem;
+    margin-top: 16px;
+    font-family: Rejoice;
 }
 .home__description{
     color: #fff;
     font-size: 1rem;
 }
+.btn{
+    color: wheat;
+    background: hsl(12,32%,22%);
+    padding: .5rem .8rem;
+    border: 1px solid hsl(39, 46%, 23%);
+    border-radius: 20px;
+    margin-top:15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all .3s ease-in;
+}
+.btn:hover{
+    color: hsl(12,32%,22%);
+    background-color: hsl(39,62%,65%);
+}
+.home__image img{
+    margin-bottom: 2rem;
+}
+/* Get Start btn */
+/* 
+.btn {
+
 /* Navigation for mobile devices */
 
 

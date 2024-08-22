@@ -56,6 +56,12 @@
     font-size: 13px;
   
   }
+  .about-info p {
+    width: 100%;
+    /* text-align: center; */
+    color: white;
+    font-size: 21px;
+}
   
 }
 @media screen and (max-width: 748px) {

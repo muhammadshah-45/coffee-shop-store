@@ -71,10 +71,15 @@ html{
 
 }
 body{
+    width: 100%;
     font-family: "Poppins";
     font-size:.938rem ;
-    background-color:#fff ;
+    background:linear-gradient(90deg,hsl(12,32%,22%) 0%,#65463E 27% );
     color: hsl(12,12%,32%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
 }
 ul{
    list-style: none;
@@ -91,6 +96,7 @@ img{
 .container{
     /* max-width: 1120px; */
     /* margin-inline: 1rem; */
+
 
 }
 
@@ -139,14 +145,21 @@ img{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
+   /* From https://css.glass */
+background: rgba(255, 255, 255, 0.09);
+border-radius: 4px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: none;
+
 }
 .nav__logo{
     color: #fff;
     display: flex;
     align-items: center;
     column-gap: .5rem;
-    /* border: 1px solid red; */
+
     font-size: 1.25rem;
     font-family: "Titillium Web";
     font-weight: bold;
@@ -162,16 +175,24 @@ img{
     
 }
 .nav__link{
-    color: #fff;
     display: flex;
     align-items: center;
     flex-direction: column;
+    color: #fff;
     font-size: 10px;
+    font-weight: 600;
     row-gap: .256rem;
     padding: .4rem .6rem;
     transition: color .3s;
     background-color: #ccc;
-    border-radius: 5px;
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.39);
+
+    border-radius: 10px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .nav__link:hover{
@@ -184,6 +205,8 @@ img{
     background: url(../images/banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    border-bottom-left-radius:20px ;
+    border-bottom-right-radius:20px ;
 }
 .grid{
     display: flex;
@@ -194,7 +217,6 @@ img{
 }
 
 .home__container {
-    
     backdrop-filter: blur(4px);
     z-index: -1;
 }
@@ -222,10 +244,6 @@ img{
     color: white;
     font-family: ecoplan;
 }
-#shah{
-    background-color: blueviolet;
-}
-
 
 .home__description{
     color: #fff;
@@ -249,11 +267,119 @@ img{
 .home__image img{
     margin-bottom: 2rem;
 }
-/* Get Start btn */
-/* 
-.btn {
+/* Coffee Section */
+h1{
+    text-align: center;
+    margin:3rem 0 ;
+    color: white;
+}
+.coffee{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.coffee-container{
+    width: 65%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
 
-/* Navigation for mobile devices */
+    padding-top: 3rem ;
+    border-radius: 20%;
+}
+
+.coffee-container .coffee-cup{
+    width: 190px;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.256),rgba(0,0,0,0.265)),url(/assets/images/addCookiee.jpeg);
+    background-size: cover;
+}
+.coffee-cup img{
+    width: 150px;
+    height: 130px;
+    position: relative;
+    top: -40px;
+    border-radius: 50%;
+
+}
+.coffee-cup h2{
+    margin-top: -15px;
+    color: hsl(0, 0%, 100%);
+}
+.coffee-cup p{
+    font-size: 13px;
+    padding: 2px;
+    color: white;
+}
+/* About Section */
+.about{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.about-info{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap:wrap;
+    padding:2rem;
+
+    
+}
+.about-info img{
+    width: 300px;
+    border-radius: 20px;
+}
+
+.about-info p{
+    width: 40%;
+    /* text-align: center; */
+    color: white;
+    font-size: x-large;
+}
+/* Cold Coffee */
+.cold-coffee{
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.cold-coffee-container{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1.4rem;
+
+padding: 1rem;
+flex-wrap: wrap;
+}
+.cold-cup{
+   width: 150px;
+   background-color: white;
+   padding: 10px;
+}
+.cold-cup img{
+  background-color:#a67646;
+}
+.cold-cup h3{
+   font-size: normal;
+  font-weight: 600;
+  text-align: center;
+}
 
 
 /* change background header */

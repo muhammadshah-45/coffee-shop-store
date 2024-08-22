@@ -13,7 +13,7 @@
      -smaller-font-size:.813rem;
 
 */
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 370px) {
   /* .grid{
     flex-direction: column;
     align-items: center;
@@ -55,6 +55,11 @@
     flex-direction: column;
     align-items: center;
   }
+  .about-info{
+    
+  }
+ 
+ 
 }
 
 @media screen and (max-width: 1023px) {
@@ -68,6 +73,10 @@
   .nav__item{
     padding-left: 20px;
 
+  }
+  .about-info{
+    flex-wrap: wrap;
+    
   }
   /* .nav__menu {
     position: fixed;

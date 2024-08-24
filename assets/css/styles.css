@@ -517,14 +517,35 @@ footer{
     justify-content: center;
     gap: 10px;
     font-size: 20px;
+
 }
+.footer__link i{
+    background-color: rgba(255, 255, 255, 0.715);
+    padding: 0 3px;
+    border-radius: 2px;
+    cursor: pointer;
+    
+    transition: all .5s ease-in-out;
+}
+.footer__link i:hover{
+    background-color: rgba(0, 0, 0, 0.418);
+    color: white;
+    border-radius: 2px;
+    border: none;
+    box-shadow: 0 0 4px rgba(177, 177, 177, 0.799);
+}
+.footer__link i:nth-child(2):hover{
+    
+    background: rgba(67, 67, 67, 0.521);
+}
+
 .footer-info1 .footer__link i:nth-child(1){
     
     color:rgb(209, 40, 195);
 }
 .footer-info1 .footer__link i:nth-child(2){
     
-    color:rgb(222, 222, 222);
+    color:rgb(28, 24, 24);
 }
 .footer-info1 .footer__link i:nth-child(3){
     
